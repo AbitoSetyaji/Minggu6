@@ -1,0 +1,40 @@
+*,{
+    font-family: roboto;
+    background-color: rgb(245, 241, 241);
+    margin: 0;
+    padding: 0;
+}
+
+.text-align {
+    text-align: center;
+}
+
+
+.main {
+    color: rgb(30, 171, 101);
+}
+
+.header{
+    background-color:rgb(87, 62, 66);
+    padding: 10px;
+    text-align: center;
+}
+
+.not-main {
+    list-style-type: none;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    
+
+}
+
+li a:hover {
+    background-color: rgb(66, 136, 205);
+    color: rgb(188, 188, 191);
+}
+
+.topnav {
+    background-color: rgb(59, 58, 58);
+    margin: auto;
+    
+}

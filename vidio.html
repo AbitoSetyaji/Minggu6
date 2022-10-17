@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel untuk menghubungkan ke file lain/sumber lain-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <title>Portofolio Abito</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Selamat Datang</h1>
+         <p>Tugas Pemprogaman Web</p>
+         </div>
+    <ul class="topnav">
+        <a href="index.html" class="not-main">Home</a> |
+        <a href="vidio.html" class="not-main">Video</a>  |
+        <a href="contact.html" class="not-main">Contact</a> |
+        <a href="biodata.html" class="not-main">Biodata</a> |
+        <a href="about.html" class="not-main">About Me</a>  |
+    </ul>
+
+    
+
+
+    <h1 >Trailer - Video</h1>
+    <p>
+    <button onclick="playVid()">Play Video</button>
+    <button onclick="pauseVid()">Pause Video</button>
+    <button onclick="durationVid()" type="button">Duration Video</button>
+    <button onclick="enableControls()" type="button">Enable Controls</button>
+    <button onclick="disableControls()" type="button">Disable Controls</button>
+    <button onclick="checkControls()" type="button">Check Controls</button>
+    </p>
+    <video  width="1450" id="myVideo"> 
+        <source src="Media\mediamov_bbb.mp4" type="video/mp4">
+        browser not support
+    </video>
+
+    <hr />
+
+
+    <footer class="text-align">
+        <p>Copyright &copy; 2022 Abito</p>
+
+    </footer>
+
+</body>
+<script>
+var vid = document.getElementById("myVideo");
+
+function playVid() {
+vid.play();
+vid.loop = true;
+}
+
+function pauseVid() {
+vid.pause();
+}
+
+function durationVid() {
+alert(vid.duration);
+}
+
+function enableControls () {
+vid.controls = true;
+vid.load();
+}
+
+function disableControls () {
+vid.controls = false;
+vid.load();
+}
+
+function checkControls() {
+alert(vid.controls);
+}
+
+
+
+</script>
+</html>
